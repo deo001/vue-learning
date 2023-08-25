@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "name":"brazilian coat",
+        "price": "Tzs 10000"  
+    },
+    {
+        "id": 2,
+        "name":"shirt",
+        "price": "Tzs 10000"  
+    },
+    {
+        "id": 3,
+        "name":"brazilian coat",
+        "price": "Tzs 10000"  
+    },
+    {
+        "id": 4,
+        "name":"jk coat",
+        "price": "Tzs 10000"  
+    },
+    {
+        "id": 5,
+        "name":"ug coat",
+        "price": "Tzs 10000"  
+    },
+    {
+        "id": 6,
+        "name":"ml coat",
+        "price": "Tzs 10000"  
+    },
+    {
+        "id": 7,
+        "name":"ug coat",
+        "price": "Tzs 10000"  
+    },
+    {
+        "id": 8,
+        "name":"ky coat",
+        "price": "Tzs 10000"  
+    },
+    {
+        "id": 9,
+        "name":"tz coat",
+        "price": "Tzs 10000"  
+    }
+    ,
+    {
+        "id": 12 ,
+        "name":"tz coat",
+        "price": "Tzs 10000"  
+    }
+]

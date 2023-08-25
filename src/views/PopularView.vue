@@ -1,5 +1,10 @@
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+
+</script>
 <template>
-        <div class = "container">
+   <main>
+    <div class = "container">
             <div class = "title text-center pt-3 pb-5">
                 <h2 class = "position-relative d-inline-block ms-4">Popular Of This Year</h2>
             </div>
@@ -82,4 +87,7 @@
                 </div>
             </div>
         </div>
+   </main>
+
+        <RouterView/>
 </template>

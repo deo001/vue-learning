@@ -1,15 +1,28 @@
-<template>
-    <div>
-        .<div class="card">
-            <img src="../assets/image/1.jpg" class="fluid-img " width="300"  alt="">
-            <div class="card-body">
-                <h4 class="card-title w-75 align-item-center btn btn-primary">Germany Coat</h4>
-                <p class="card-text text-center text-muted">Get the affordable coat for this winter</p>
-            </div>
-        </div>
-    </div>
-</template>
+<script setup>
+import {useRoute} from 'vue-router'
+import {ref,onBeforeMount} from 'vue'
+import products from "../data.json"
 
-<script>
+const product = ref(null)
+const route = useRoute()
+const {id} = route.params
+onBeforeMount(()=> {
+    product.value = products.find(p => p.id === parseInt(id))
+})
+
 
 </script>
+<template>
+
+    <div class="container justify-content-center text-align-center">
+        <div v-if="product" class="align-items-center">
+            <h1> product  details</h1>
+            <h3>{{ product.name}}</h3>
+            <p>{{ product.price }}</p>
+        </div>
+        <div v-else>
+            <h1>Nothing to show</h1>
+        </div>
+    
+    </div>
+</template>
